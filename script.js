@@ -20,20 +20,27 @@ window.addEventListener('scroll' ,function() {
 })
 
 // script.js
-document.querySelectorAll('.toggle-btn').forEach((button) => {
-  button.addEventListener('click', function () {
-    const details = this.nextElementSibling;
 
-    if (details.style.display === 'block') {
-      details.style.display = 'none';
-      this.textContent = 'Show Details';
-    } else {
-      details.style.display = 'block';
-      this.textContent = 'Hide Details';
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.toggle-btn').forEach((button) => {
+    button.addEventListener('click', function () {
+      const details = this.parentElement.querySelector('.details');
+      const isVisible = window.getComputedStyle(details).display === 'block';
 
-    }
+      if (isVisible) {
+        details.style.display = 'none';
+        this.textContent = 'Show Details';
+      } else {
+        details.style.display = 'block';
+        this.textContent = 'Hide Details';
+      }
+    });
   });
 });
+
+
+
+
 
 
 //contact

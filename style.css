@@ -866,7 +866,7 @@ header {
 }
 
 .project-card {
-  background: white;
+  background: rgb(114, 223, 170);
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -910,7 +910,7 @@ transition: 1s;
 }
 
 .project-card .details{
-  color: white;
+  color: rgb(1, 49, 12);
   display: none;
   margin: 10px;
 }
