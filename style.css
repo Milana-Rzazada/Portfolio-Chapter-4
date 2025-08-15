@@ -263,7 +263,7 @@ body.dark-mode .aside a {
 
     .typed-cursor {
       color: #00ffcc;
-      animation: blink 0.7s infinite;
+      animation: blink 2s infinite;
     }
 
     @keyframes blink {
@@ -311,9 +311,10 @@ color: var(--text-black-700);
 }
 .home .home-img{
   flex: 0 0 40%;
-  max-width: 40%;
+  max-width: 50%;
   text-align: center;
   position: relative;
+  
 }
 .home-img::after{
   content: '';
@@ -337,13 +338,18 @@ color: var(--text-black-700);
   top:-40px;
 }
 .home .home-img img{
-  margin: auto;
-  border-radius: 5px;
-  height: 400px;
+  margin: -10px;
+  border-radius: 10px;
+  height: 500px;
+ 
 
 }
 
-
+.home .home-img img:hover{
+padding: 30px;
+transition-delay: 0.2s;
+transform: scale(1.05);
+}
 
 
 main {
