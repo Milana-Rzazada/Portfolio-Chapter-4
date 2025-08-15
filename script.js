@@ -77,3 +77,16 @@ document.addEventListener("DOMContentLoaded", function(){
 });
 
 
+const darkModeFigure = document.getElementById('darkModeFigure');
+
+darkModeFigure.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+      if (document.body.classList.contains('dark-mode')) {
+        darkModeFigure.innerHTML = '<i class="fa fa-sun"></i> Light Mode';
+    } else {
+        darkModeFigure.innerHTML = '<i class="fa fa-moon"></i> Dark Mode';
+    }
+});
+
+
+
