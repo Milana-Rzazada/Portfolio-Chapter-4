@@ -1020,3 +1020,19 @@ footer .footer-bottom{
   margin-top: 10px;
   color: #444;
 }
+
+#backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  border: none;
+  background: #4caf50;
+  color: white;
+  border-radius: 50%;
+  display: none;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  font-size: 25px;font-weight: 800;
+}
