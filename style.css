@@ -222,7 +222,33 @@ position: relative;
 
 
 
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+}
 
+body.dark-mode .aside {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+body.dark-mode a {
+    color: #eff3f6;
+}
+
+body.dark-mode .aside a {
+    color: #ebf3ef;
+}
+
+
+#darkModeFigure {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 25px;
+}
 
 
 
