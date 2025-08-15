@@ -102,3 +102,25 @@ window.addEventListener('scroll', () => {
   btn.style.display = window.scrollY > 300 ? 'block' : 'none';
 });
 btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+
+const filterButtons = document.querySelectorAll('.filter-btn');
+const projects = document.querySelectorAll('.project-card');
+
+filterButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    // Active class dəyiş
+    document.querySelector('.filter-btn.active').classList.remove('active');
+    button.classList.add('active');
+
+    const category = button.getAttribute('data-filter');
+
+    projects.forEach(project => {
+      if (category === 'all' || project.getAttribute('data-category') === category) {
+        project.style.display = 'inline-block';
+      } else {
+        project.style.display = 'none';
+      }
+    });
+  });
+});
