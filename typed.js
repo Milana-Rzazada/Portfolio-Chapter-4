@@ -15,7 +15,7 @@ let typed = new Typed('.auto-input',{
 
 const words = new Typed('#words', {
       strings: [
-        "Hello, I'm Milana. I'm a Front-End developer and Web Developer.",
+        "I'm a Front-End developer and Web Developer.",
         "I have over 3 years of work experience in this field. I have studied in this field, developed projects, and gained experience both in Azerbaijan and Canada.",
         "Welcome to my Portfolio website about myself and the work I do! You can see some of the projects I have completed in the Projects section.",
         "Enjoy browsing my portfolio!",
